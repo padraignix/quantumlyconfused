@@ -1,9 +1,241 @@
+---
+title: Quantumly Confused Cyber Security
+summary: Quantumly Confused Cyber Security - Quantum Computing, CTF events, Security Infrastructure, Cryptography, Emulator development, Quantum Technology and related adventures
+keywords: hacking,quantumly confused,blog,information security,infosec,hackthebox,quantum computing,quantum technology,emulation,emulators,reverse engineering, gamified learning
+twitter_username: _PatrickDowning
+thumbnail:  https://quantumlyconfused.com/favicon.png
+canon:      https://quantumlyconfused.com
+---
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>Quantumly Confused</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Patrick Downing">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="{{ page.summary }}">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <link rel="canonical" href="{{ page.canon }}" />
+
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ page.summary | strip_html | truncatewords:20 }}">
+  <meta name="twitter:image" content="{{ page.thumbnail }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ page.twitter_username }}" />
+  <meta name="twitter:creator" content="@{{ page.twitter_username }}" />
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.summary | strip_html | truncatewords:20 }}">
+  <meta property="og:image" content="{{ page.thumbnail }}">
+  <meta property="og:url" content="{{ page.canon }}">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S33RSCGSL9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-S33RSCGSL9');
+  </script>
+  <!-- Cookie Consent by https://www.PrivacyPolicies.com -->
+  <script type="text/javascript" src="//www.privacypolicies.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+  cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Quantumly Confused","website_privacy_policy_url":"https://blog.quantumlyconfused.com/tabs/disclaimer/"});
+  });
+  </script>
+
+  <!-- Google Analytics -->
+    <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-S33RSCGSL9"></script>
+    <script type="text/plain" cookie-consent="tracking">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S33RSCGSL9');
+    </script>
+  <!-- end of Google Analytics-->
+
+  <noscript>Cookie Consent by <a href="https://www.privacypolicies.com/" rel="nofollow noopener">Privacy Policies Generator website</a></noscript>
+  <!-- End Cookie Consent -->
+</head>
 <body>
 
-<h1>Quantumly Confused</h1>
-<p>More coming soon...</p>
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="https://quantumlyconfused.com">
+            <img src="assets/img/logo2.png" alt="Quantumly Confused">
+            <p>Quantumly Confused</p>
+          </a>
+          <button class="header--cta cta">Reach Out</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Blog</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+          </ul>     
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Quantumly<br>Confused<br>Cybersecurity</h1>
+                <button class="cta">Reach Out
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/earth-orig.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a>
+                  <h3>Quantum Computing</h3>
+                  <p>Exploring Quantum Computing's impact on Cyber Security.</p>
+                </a>
+                <a>
+                  <h3>Cybersecurity</h3>
+                  <p>Identity &amp; Access Management, Cryptography, Offensive Security.</p>
+                </a>
+                <a>
+                  <h3>Gamified Learning</h3>
+                  <p>Hackathons, CTFs and events that gamify the learning process.</p>
+                </a>
+              </div>
+              <br><br>
+              <p style="font-size:70%;text-align:center;color:#7f7f7f">©2022 Patrick Downing<br><a href="https://blog.quantumlyconfused.com/tabs/disclaimer/">Privacy Policy</a></p>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Recent Articles</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="https://blog.quantumlyconfused.com/trench-talk/2022/01/25/real-life-parallels-hvac/">
+                      <div class="slider--item-image">
+                        <img src="assets/img/stand-back.png" alt="HVAC SRE">
+                      </div>
+                      <p class="slider--item-title">HVAC &amp; InfoSec - What a Pair!</p>
+                      <p class="slider--item-description">HVACs, InfoSec, recruitment practices - what do these topics have in common? As we shall see surprisingly alot!</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="https://blog.quantumlyconfused.com/quantum-computing/2022/03/06/xanadu-qhack2022/">
+                      <div class="slider--item-image">
+                        <img src="https://blog.quantumlyconfused.com/assets/quantum-computing/qhack2022/banner.png" alt="QHack2022">
+                      </div>
+                      <p class="slider--item-title">QHack 2022</p>
+                      <p class="slider--item-description">Overview of Xanadu's 2022 QHack Coding Challenges.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="https://blog.quantumlyconfused.com/trench-talk/2022/01/24/life-in-the-trenches/">
+                      <div class="slider--item-image">
+                        <img src="https://blog.quantumlyconfused.com/assets/ops-life/infosec-banner1.png" alt="Trench Talk Series">
+                      </div>
+                      <p class="slider--item-title">Trench Talk - Infosec Ops Team</p>
+                      <p class="slider--item-description">Kick off new series covering 'the narrative' of the last decade of being in an Infosec Operations team.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>Gamified<br>Approach To<br>Learning</h2>
+                <a href="https://blog.quantumlyconfused.com/tabs/about/">About
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/learning.png" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="https://en.wikipedia.org/wiki/Gamification_of_learning">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="https://blog.quantumlyconfused.com/tabs/archives">
+                  <h3>Events</h3>
+                </a>
+                <a href="https://blog.quantumlyconfused.com">
+                  <h3>Blog</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Digital Fingerprints</p>
+                    <br>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="https://twitter.com/_PatrickDowning">Twitter</a></li>
+                    <li><a href="https://github.com/padraignix">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/downingpatrick/">LinkedIn</a></li>
+                    <li><a href="https://discord.gg/Q2kR4Y5taS">Discord</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Blog</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
 
 </body>
 </html>
