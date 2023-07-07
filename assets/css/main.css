@@ -821,7 +821,8 @@ body {
       border-radius: 7px;
       background-position: center;
       background-size: cover;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      margin-right: 10px; }
       .about--options > a:nth-child(1) {
         background-image: url("../img/philo1.jpg"); }
       .about--options > a:nth-child(2) {
