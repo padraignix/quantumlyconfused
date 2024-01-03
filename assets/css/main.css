@@ -743,24 +743,6 @@ body {
   .about--banner {
     position: relative;
     height: 475px; }
-    .about--banner::before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      left: 200px;
-      transform: rotate(-25deg);
-      border: 5px solid #223ed8;
-      border-right-color: transparent;
-      border-bottom-color: transparent; }
-    .about--banner::after {
-      content: "";
-      position: absolute;
-      top: 75px;
-      left: 350px;
-      transform: rotate(45deg);
-      width: 10px;
-      height: 10px;
-      background-color: #223ed8; }
     .about--banner p {
       font-size: 10px;}
     .about--banner h2 {
@@ -770,23 +752,6 @@ body {
       font-weight: 900;
       line-height: 1;
       z-index: 1; }
-      .about--banner h2::before {
-        content: "";
-        position: absolute;
-        top: 60px;
-        left: 268px;
-        width: 30px;
-        height: 30px;
-        background-color: #223ed8;
-        border-radius: 50%; }
-      .about--banner h2::after {
-        content: "";
-        position: absolute;
-        top: 255px;
-        left: 255px;
-        width: 10px;
-        height: 10px;
-        background-color: #223ed8; }
     .about--banner a {
       padding: 5px 17px 5px 0;
       text-decoration: none;
@@ -844,41 +809,29 @@ body {
 @media (max-width: 767px) {
   .about--banner {
     height: 305px; }
-    .about--banner::before {
-      top: 0;
-      left: 125px; }
-    .about--banner::after {
-      top: 35px;
-      left: 260px; }
     .about--banner h2 {
       margin-top: 10px;
       font-size: 44px; }
-      .about--banner h2::before {
-        top: 28px;
-        left: 168px; }
-      .about--banner h2::after {
-        top: 163px;
-        left: 163px; }
     .about--banner img {
-      bottom: 100px;
+      bottom: 120px;
       width: 215px;
-      right: 40px;  } }
+      right: 10px;  } }
+@media (max-width: 530px) {
+  .about--banner {
+    height: 305px; }
+    .about--banner h2 {
+      margin-top: 10px;
+      font-size: 44px; }
+    .about--banner img {
+      bottom: 200px;
+      width: 150px;
+      right: 10px;  } }
 @media (max-width: 350px) {
   .about--banner {
     height: auto; }
-    .about--banner::before {
-      left: 155px; }
-    .about--banner::after {
-      left: 310px; }
     .about--banner h2 {
       margin-top: 0;
       font-size: 55px; }
-      .about--banner h2::before {
-        top: 43px;
-        left: 214px; }
-      .about--banner h2::after {
-        top: 205px;
-        left: 205px; }
     .about--banner img {
       display: none;}
   .about--options {
