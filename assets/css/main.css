@@ -761,6 +761,8 @@ body {
       width: 10px;
       height: 10px;
       background-color: #223ed8; }
+    .about--banner p {
+      font-size: 10px;}
     .about--banner h2 {
       position: relative;
       margin-top: 35px;
@@ -802,8 +804,9 @@ body {
         transition: left 0.2s ease-in-out; }
     .about--banner img {
       position: absolute;
-      bottom: 0px;
-      right: -62px; }
+      bottom: 100px;
+      right: -62px;
+      width: 380px;  }
   .about--options {
     display: flex;
     max-width: 350px;
@@ -824,9 +827,9 @@ body {
       background-repeat: no-repeat;
       margin-right: 10px; }
       .about--options > a:nth-child(1) {
-        background-image: url("../img/philo1.jpg"); }
+        background-image: url("../img/qiskit.png"); }
       .about--options > a:nth-child(2) {
-        background-image: url("../img/party1.webp"); }
+        background-image: url("../img/zenith.png"); }
       .about--options > a:nth-child(3) {
         background-image: url("../img/books.jpg"); }
       .about--options > a:hover h3 {
@@ -834,8 +837,7 @@ body {
     .about--options h3 {
       position: absolute;
       bottom: -38px;
-      left: 10px;
-      font-size: 16px;
+      font-size: 12px;
       text-transform: uppercase;
       transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out; }
 
@@ -858,7 +860,9 @@ body {
         top: 163px;
         left: 163px; }
     .about--banner img {
-      width: 315px; } }
+      bottom: 100px;
+      width: 215px;
+      right: 40px;  } }
 @media (max-width: 350px) {
   .about--banner {
     height: auto; }
@@ -876,7 +880,7 @@ body {
         top: 205px;
         left: 205px; }
     .about--banner img {
-      display: none; }
+      display: none;}
   .about--options {
     display: none; } }
 .contact {
@@ -935,7 +939,7 @@ body {
           background-color: #6e5494;
           border-radius: 10px; }
         .contact--lockup .modal--options li:nth-child(3) {
-          background-color: #0077b5;
+          background-color: #6364ff;
           border-radius: 10px; }
         .contact--lockup .modal--options li:nth-child(4) {
           background-color: #5865F2;
